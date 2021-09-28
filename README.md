@@ -4,12 +4,12 @@
 
 - [x] Index 
 - [x] Produtos
-  - [ ] Laranja
-  - [ ] Soja
-  - [ ] Trigo
-  - [ ] Milho
-- [ ] Frutas da Estação
+  - [x] Laranja
+  - [x] Soja
+  - [x] Trigo
+  - [x] Milho
+- [x] Frutas da Estação
 - [x] Login
   - [ ] Pagina pós Login
-- [ ] Cadastro
+- [x] Cadastro
 - [x] Sobre Nós
