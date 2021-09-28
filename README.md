@@ -13,3 +13,7 @@
   - [ ] Pagina pós Login
 - [x] Cadastro
 - [x] Sobre Nós
+
+## Autores
+
+* [Guilherme
