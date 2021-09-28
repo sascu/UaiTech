@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+	text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(207, 207, 207);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(153, 153, 153);
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color:#5F5454;
+  text-decoration: none;
+  outline: none;
+}
+html, body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+main {
+  box-sizing: border-box;
+  padding: 4rem;
+}
+footer {
+  width: 100%;
+  padding: 2rem 3rem;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  box-shadow: 4px 0px 15px #AAAAAA40;
+  background: white;
+  font-size: 20px;
+}
+.primeiraTela {
+  width: 100%;
+  min-height: 100vh;
+}
+.homeDiv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.sobreTitulo {
+  font-size: 180%;
+  margin: 2rem 0;
+}
+.sobreTexto {
+  font-size: 125%;
+}
+.secaoSobre {
+  font-size: 1.2rem;
+  width: 70%;
+  line-height: 2rem;
+} 
+
+/* Pagina Produtos */
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.item {
+  display: flex;
+  text-align: left;
+  width: 18rem; 
+  height: 25rem;
+  flex-direction: column;
+  box-sizing: border-box;
+  border: solid #aaaaaa30 1px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  margin: 2rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+.item:hover {
+  transform: scale(1.02);
+  transition: 200ms;
+}
+.itemTitulo {
+  margin: 1rem 0;
+  font-size: 130%;
+}
+.itemImg {
+  margin: 0.6rem auto;
+  width: 50%;
+}
+.itemPreco {
+  display: flex;
+  align-self: flex-end;
+  width: 100%;
+  flex-direction: row;
+  justify-content:space-between;
+  font-size: 110%;
+}
+
+/* Pagina Sobre */
+.criadores{
+  display: flex;
+  flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 4rem 0;
+    justify-content: space-around;
+}
+.criadores li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 15%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #929292;
+    border-radius: 10px;
+}
+.criadores img{
+    width: 80%;
+    border-radius: 50%;
+    box-shadow:2.5px 2.5px 10px 0 #b8b8b8;
+    margin: 0 auto 2rem;
+}
+.criadores li:hover {
+    border-color: rgb(196, 196, 196);
+    transition: 200ms;
+    transform: scale(1.1);
+}
+.criadores:active{
+    box-shadow: 10 50 0 0 #000000;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content:space-between;
+  padding: 0 3rem;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: 4px 0px 15px #AAAAAA40;
+  background: white;
+  height: 5rem;
+  font-size: 20px;
+}
+.headerItens {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-around;
+}
+.headerItens > a {
+  display: flex;
+  padding: 0 1rem;
+}
+.headerItens > a:hover {
+  transition: 200ms;
+  opacity: 0.5;
+}
+.headerLink {
+  color: #1B791B;
+  width:fit-content;
+}
+.logo {
+  color: #1B791B;
+  font-size: 150%;
+  font-weight: bold;
+}
+.searchBar {
+  display: flex;
+  flex-direction: row;
+  border: solid 1.5px #1B791B;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  font-size: 1rem;
+  align-items: center;
+  height: 2rem;
+}
+.searchButton {
+  background-color: transparent;
+  border: none;
+  box-sizing: border-box;
+  margin: auto 0;
+  padding-top: 3px;
+}
+
+.searchButton:hover {
+  color: #1B791B;
+  font-weight: bold;
+  cursor: pointer;
+}
+.searchInput {
+  height: 100%;
+  padding: .5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.footerList {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+.footerList > li {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0.3rem 0;
+}
+.footerList > li:hover {
+  transition: 200ms;
+  opacity: 0.5;
+}
+.copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+.cadastroTitulo {
+  font-size: 150%;
+  margin-bottom: 1rem;
+}
+.cadastrar-se {
+  background-color: #1B791B;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  color: white; 
+  border: none;
+  border-radius:5px;
+  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 110%;
+  font-weight: bold;
+}
+.cadastrar {
+  background-color: #1B791B;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  color: white; 
+  border: none;
+  border-radius:5px;
+  margin: 0.5rem 0;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  font-size: 110%;
+  font-weight: bold;
+}
+.cadastrar:hover {
+  background-color: #2f702f;
+  transition: 200ms;
+  cursor: pointer;
+}
+.cadastroInput {
+  height: 1.7 rem;
+  width: 25rem;
+  border-radius: 5px;
+  border: solid 1px #999999;
+  padding: 0.4rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+
+/* Página de login */
+
+.formularioLogin {
+  font-size: 1.2rem;
+}
+.alimentoImg {
+  border: solid 2px #449944;
+  border-radius: 5px;
+  max-height: 26rem;
+  width: 35rem;
+  margin-right: 2rem;
+}
+.alimentoTitulo {
+  font-size: 200%;
+  margin-bottom: 2rem;
+}
+.alimentoTitulo2{
+  font-size: 150%;
+  margin-bottom: 2rem;
+}
+.alimentoInfo {
+  font-size: 125%;
+  margin-bottom: 1rem;
+}
+.alimentoDiv {
+  display: flex;
+  flex-direction: row;
+}
+.alimentoDivAux {
+  display: flex;
+  flex-direction: column;
+}
+.alimentoDivSecundaria {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0;
+  box-sizing: border-box;
+}
+.alimentoTabela {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-shadow: 4px 4px 2px #AAAAAA40;
+  font-size: 125%;
+}
+.alimentoBeneficios {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.alimentoTabelaTr > td {
+  padding: 0.3rem 1.4rem;
+  border: #449944 2px solid;
+}
+
+@media only screen and (max-width: 800px){
+  * {
+    font-size: 85%;
+  }
+  header {
+    padding: 5px;
+  }
+  #botaoCadastro {
+    display: none;
+  }
+  .headerItens {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .headerItens > a {
+    padding: 8px;
+  }
+  .searchBar {
+    display: none;
+  }
+  .alimentoImg {
+    width: 100%;
+    margin: 0;
+  }
+  main {
+    padding: 0;
+  }
+  .homeDiv {
+    flex-direction: column;
+  }
+  .logo {
+    display: none;
+  }
+  .criadores {
+    flex-direction: column;
+    width: 90%;
+  }
+  .criadores > li {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .alimentoDiv {
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .login {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  .cadastroInput {
+    width: 100%;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .alimentoTabela {
+    width: 100%;
+  }
+  .alimentoTabelaTr > td {
+    width: 100%;
+    padding: 5px;
+  }
+}
