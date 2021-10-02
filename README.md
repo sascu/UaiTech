@@ -18,4 +18,4 @@
 
 * [Fabricio Nunes de Oliveira](https://github.com/sascu)
 * [Guilherme França Soares](https://github.com/Guifranso)
-* [Luis Felipe Garcia de Souza Paim](#)
+* [Luis Felipe Garcia de Souza Paim](https://github.com/PoRoyaI)
